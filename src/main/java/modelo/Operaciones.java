@@ -1,16 +1,16 @@
 
 package modelo;
 
-public class Operacion {
+public class Operaciones {
     private int operador1;
     private int operador2;
 
-    public Operacion(int operador1, int operador2) {
+    public Operaciones(int operador1, int operador2) {
         this.operador1 = operador1;
         this.operador2 = operador2;
     }
 
-    public Operacion() {
+    public Operaciones() {
     }
 
     public void setOperador1(int operador1) {
@@ -22,15 +22,15 @@ public class Operacion {
     }
     
     public int sumar(){
-        return operador1+operador2;
+        return operador1 + operador2;
     }
     
     public int restar(){
-        return operador1-operador2;
+        return operador1 - operador2;
     }
     
     public int multiplicar(){
-        return operador1*operador2;
+        return operador1 * operador2;
     }
     
 }

@@ -2,12 +2,19 @@
 package com.mycompany.semana01;
 
 import java.util.Scanner;
-import modelo.Operacion;
+import modelo.Operaciones;
+import controlador.ControladorOperaciones;
+import vista.frmOperaciones;
 
 public class Semana01 {
 
     public static void main(String[] args) {
-        Scanner teclado = new Scanner(System.in);
+        Operaciones modelo = new Operaciones(20, 30);
+        frmOperaciones vista = new frmOperaciones();
+        ControladorOperaciones controlador = new ControladorOperaciones(modelo, vista);
+        controlador.iniciar();
+        
+        /*Scanner teclado = new Scanner(System.in);
         Operacion operacion = new Operacion();
         System.out.println("Ingrese primer valor");
         int numero = teclado.nextInt();
@@ -18,6 +25,6 @@ public class Semana01 {
         
         System.out.println("La suma es: " + operacion.sumar());
         System.out.println("La resta es: " + operacion.restar());
-        System.out.println("El producto es: " + operacion.multiplicar());
+        System.out.println("El producto es: " + operacion.multiplicar());*/
     }
 }
