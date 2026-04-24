@@ -10,7 +10,7 @@ public class Semana01 {
         Scanner teclado = new Scanner(System.in);
         Operacion operacion = new Operacion();
         System.out.println("Ingrese primer valor");
-        int numero = teclad o.nextInt();
+        int numero = teclado.nextInt();
         operacion.setOperador1(numero);
         System.out.println("Ingrese segundo valor");
         numero = teclado.nextInt();
